@@ -41,6 +41,8 @@ h3 {
     font-size: 14px;
     font-weight: 300;
     text-transform: uppercase;
+    margin-top: 32px;
+    margin-bottom: 28px;
 }
 h2 {
 width: 407px;
@@ -58,6 +60,7 @@ p {
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
+    margin-top: 34px;
 }
 .main-box {
     width: 900;
@@ -71,21 +74,15 @@ p {
     margin: 0 2rem;
 }
 button{
-    width: 164px;
-    height: 60px;
-    border: 1px solid #626262;
-    text-align: center;
-    margin-top: 54px;
-    margin-bottom: 70px;
-}
-.knob {
     width: 96px;
     height: 17px;
     color: #626262;
-    font-family: "Playfair Display";
+    font-family: Playfair Display;
     font-size: 20px;
     font-weight: 400;
     line-height: 24px;
-    margin: 21 22 34 34;
-    text-decoration: none;
+}
+.btn {
+    margin: o auto;
+    margin-top: 54px
 }
