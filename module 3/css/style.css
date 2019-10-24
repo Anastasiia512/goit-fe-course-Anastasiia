@@ -53,13 +53,10 @@ text-decoration: none;
 .menu li:not(:last-child) {
     margin-right: 100px;
 }
-.main-box {
-    text-align: center;
-}
+
 .picture {
     display: inline-block;
 box-sizing: border-box;
-text-align: center;
 margin: 0;
 padding: 0;
 
@@ -69,6 +66,7 @@ padding: 0;
     padding-left: 150px;
     padding-bottom: 134px;
 }
+
 .picture-items:nth-of-type(3n) {
     padding-bottom: 0px;
 }
@@ -91,6 +89,7 @@ h3 {
     text-transform: uppercase;
     margin-top: 32px;
     margin-bottom: 28px;
+    text-align: left;
 }
 h2 {
 color: #626262;
@@ -98,6 +97,7 @@ font-family: Playfair Display;
 font-size: 30px;
 font-weight: 400;
 margin: 0px;
+text-align: left;
 }
 p {
     width: 414px;
@@ -107,6 +107,7 @@ p {
     line-height: 24px;
     margin-top: 34px;
     margin-bottom: 0px;
+    text-align: left;
 }
 .main-box {
     width: 900;
