@@ -1,0 +1,71 @@
+/* /* div {
+width: 200px;
+height: auto;
+border: 5px solid coral;
+border-radius: 10px;
+text-align: center;
+padding: 10px;
+box-sizing: border-box;
+display: inline-block;
+margin-right: -4px;
+}
+div p {
+    margin-top: 38px;
+}
+p::after {
+    content: '';
+    width: 40px;
+    height: 40px;
+    background: yellowgreen;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-image: url(../img/cat.png);
+    background-size: contain;
+}
+img {
+    width: 50px;
+    height: 50px;
+}
+p::first-line {
+font-size: 36px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color: orangered;
+}
+p::first-letter {
+    font-size: 46px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+} */
+/* img {
+    display: block;
+    width: 250;
+    float: right;
+    margin-left: 20px;
+}
+img:first-of-type {
+    float: left;
+}
+p {
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: justify;
+}
+.wrapper {
+background-color: red;
+}
+.wrapper::after { */
+    /* overflow: hidden; */
+    /* content: "";
+    display: table;
+    clear: both;
+
+} */ 
+div {
+    width: 300px;
+    height: 300px;
+    background-color:rgba(255, 0, 0, .5);
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}

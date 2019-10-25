@@ -1,138 +1,125 @@
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 body {
-    font-family: Playfair Display, Ubuntu;
-    color: #626262;
-    font-size: 14px;
-    line-height: 24px;
-    margin: 0;
+  font-family: Playfair Display, Ubuntu;
+  color: #626262;
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0;
 }
 img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 .wrapper {
-    widows: 900px;
-    margin: 0 auto;
-    padding-top: 76px;
-    padding-bottom: 104px;
+  width: 900px;
+  margin: auto;
 }
 .menu {
-    text-align: center;
-    margin: 0;
-    padding-left: 0;
-   
+  text-align: center;
+  margin: 0;
+  padding-left: 0;
+  padding-top: 76px;
+  padding-bottom: 104px;
 }
 .menu-item {
-    display: inline-block;
-    color: #626262;
-    font-family: Playfair Display;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
-    text-transform:  uppercase;
-    
+  display: inline-block;
+  color: #626262;
+  font-family: Playfair Display;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
 }
 .menu-item a:hover,
 .menu-item a:focus {
-    color: #03a9f4;
-    text-decoration: none;
+  color: #03a9f4;
+  text-decoration: none;
 }
 
 .menu-item a {
-text-decoration: none;
-color: #626262;
+  text-decoration: none;
+  color: #626262;
 }
 
 .menu li:not(:last-child) {
-    margin-right: 100px;
+  margin-right: 100px;
 }
 
 .picture {
-    display: inline-block;
-box-sizing: border-box;
-margin: 0;
-padding: 0;
-
-}
-.picture-items {
-    padding-right: 150px;
-    padding-left: 150px;
-    padding-bottom: 134px;
-    text-align: center;
+  display: inline-block;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 54px;
 }
 
-.picture-items:nth-of-type(3n) {
-    padding-bottom: 0px;
+.picture-box {
+  width: 420px;
+  margin-right: 56px;
+  margin-left: 0px;
+  font-size: 0;
+  display: inline-block;
+  margin-bottom: 104px;
 }
-
-li.picture-box {
-    margin-right: 60px;
-    margin-left: 0px;
-    font-size: 0;
+.picture-box:nth-last-child(-n + 2) {
+  margin-bottom: 0;
 }
 li.picture-box:nth-of-type(2n) {
-    margin-right: 0px;
+  margin-right: 0px;
 }
 h3 {
-    width: 63px;
-    height: 11px;
-    color: #b4ad9e;
-    font-family: Ubuntu;
-    font-size: 14px;
-    font-weight: 300;
-    text-transform: uppercase;
-    margin-top: 32px;
-    margin-bottom: 28px;
-    text-align: left;
+  width: 63px;
+  height: 11px;
+  color: #b4ad9e;
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-top: 32px;
+  margin-bottom: 28px;
+  text-align: left;
 }
 h2 {
-color: #626262;
-font-family: Playfair Display;
-font-size: 30px;
-font-weight: 400;
-margin: 0px;
-text-align: left;
+  color: #626262;
+  font-family: Playfair Display;
+  font-size: 30px;
+  font-weight: 400;
+  margin: 0px;
+  text-align: left;
 }
 p {
-    width: 414px;
-    height: 63px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    margin-top: 34px;
-    margin-bottom: 0px;
-    text-align: left;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  margin-top: 34px;
+  margin-bottom: 0px;
+  text-align: left;
 }
 .main-box {
-    width: 900;
-    margin: 0 auto;
+  width: 900;
+  margin: 0 auto;
 }
-.picture-box {
-    display: inline-block;
-    margin: 0;
-}
-button{
-   margin: 0 auto;
-    color: #626262;
-    font-family: Playfair Display;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 24px;
-    border: 1px solid #626262;
-    padding: 22px 34px 22px;
-    background: transparent;
+
+button {
+  margin: 0 auto;
+  color: #626262;
+  font-family: Playfair Display;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  border: 1px solid #626262;
+  padding: 22px 34px 22px;
+  background: transparent;
 }
 .btn {
-    text-align: center;
-    margin-top: 54px;
-    padding-bottom: 70px;
-    
+  text-align: center;
+  padding-bottom: 70px;
 }
