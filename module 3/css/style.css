@@ -42,16 +42,14 @@ img {
   color: #03a9f4;
   text-decoration: none;
 }
+.menu-item {
+  margin: 0 50px;
+}
 
 .menu-item a {
   text-decoration: none;
   color: #626262;
 }
-
-.menu li:not(:last-child) {
-  margin-right: 100px;
-}
-
 .picture {
   box-sizing: border-box;
   margin: 0;
