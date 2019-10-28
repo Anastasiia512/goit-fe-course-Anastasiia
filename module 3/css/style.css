@@ -27,6 +27,7 @@ img {
   padding-left: 0;
   padding-top: 76px;
   padding-bottom: 104px;
+  font-size: 0;
 }
 .menu-item {
   display: inline-block;
@@ -62,9 +63,8 @@ img {
   width: 420px;
   margin-right: 56px;
   margin-left: 0px;
-  font-size: 0;
   display: inline-block;
-  margin-bottom: 104px;
+  vertical-align: top;
 }
 .picture-box:nth-last-child(-n + 2) {
   margin-bottom: 0;
@@ -97,7 +97,7 @@ p {
   font-size: 14px;
   line-height: 24px;
   padding-top: 34px;
-  margin-bottom: 0;
+  margin: 0;
   text-align: left;
 }
 .main-box {
