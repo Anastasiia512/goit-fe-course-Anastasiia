@@ -34,6 +34,7 @@ img {
 /* NAVIGATION */
 .mart-menu.clearfix {
   margin: 0;
+  padding: 0;
   float: right;
   vertical-align: middle;
   text-align: right;
@@ -101,14 +102,15 @@ a:focus {
   background-color: #1abc9c;
 }
 
-.item-list {
+p.item-list {
   margin: 0;
-  padding: 12px 0 0 12px;
+  padding-left: 12px;
   float: left;
   box-sizing: border-box;
   width: 201px;
   height: 40px;
-  line-height: 100%;
+  font-size: 18px;
+  line-height: 40px;
   color: white;
   background-color: #323232;
 }
