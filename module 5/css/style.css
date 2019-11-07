@@ -74,7 +74,7 @@ header {
   min-height: 600px;
 }
 .header-container {
-  background: url(./img/img1.png);
+  background: url(img/img1.png);
   background-size: cover;
   position: absolute;
   background-position: center;
