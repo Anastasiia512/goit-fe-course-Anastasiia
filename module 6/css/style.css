@@ -106,7 +106,7 @@ main {
   background-image: url(../img/LINE_GRAPH.png);
 }
 .computer::before {
-  background-image: url(../img/_OK.png);
+  background-image: url(../img/OK.png);
 }
 .book::before {
   background-image: url(../img/BOOK_2.png);
