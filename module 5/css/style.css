@@ -31,9 +31,8 @@ h3 {
   width: 1110px;
   margin: 0 auto;
   padding-bottom: 20px;
-padding-top: 32px;
-overflow: hidden;
-
+  padding-top: 32px;
+  overflow: hidden;
 }
 .logo {
   float: left;
@@ -108,7 +107,7 @@ header {
   opacity: 0.65;
   border: none;
   outline: none;
-  transition: opacity .4s ease;
+  transition: opacity 0.4s ease;
 }
 .slider-button-right {
   right: 0;
@@ -121,8 +120,8 @@ header {
   --bd: 4px solid #fff;
   width: var(--s);
   height: var(--s);
-  border-left:  var(--bd);
-  border-top:  var(--bd);
+  border-left: var(--bd);
+  border-top: var(--bd);
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%) rotate(-45deg);
@@ -130,23 +129,23 @@ header {
 
 .slider-button-right::before {
   left: 45%;
- transform: translate(-50%, -50%) rotate(135deg);
+  transform: translate(-50%, -50%) rotate(135deg);
 }
 .slider-button-left::before {
   left: 55%;
- transform: translate(-50%, -50%) rotate(-45deg);
+  transform: translate(-50%, -50%) rotate(-45deg);
 }
 .slider-button-left:hover,
 .slider-button-left:focus {
- background-color: #4ec6ab;
- opacity: 1;
- cursor: pointer;
+  background-color: #4ec6ab;
+  opacity: 1;
+  cursor: pointer;
 }
 .slider-button-right:hover,
 .slider-button-right:focus {
   background-color: #4ec6ab;
- opacity: 1;
- cursor: pointer;
+  opacity: 1;
+  cursor: pointer;
 }
 
 /* CONTENT TEXT */
@@ -311,7 +310,6 @@ p.name-post {
   background-color: #1abc9c;
 }
 
-
 .icon4 {
   box-sizing: border-box;
   cursor: pointer;
@@ -332,16 +330,15 @@ p.name-post {
   padding-left: 10px;
 }
 .icon4 span.cart {
- float: right;
- margin-right: 10px;
- padding-top: 4px;
+  float: right;
+  margin-right: 10px;
+  padding-top: 4px;
   font-family: "Open Sans";
   font-size: 14px;
   font-weight: 400;
-  
+
   color: #ffffff;
 }
-
 
 /* FOOTER */
 
