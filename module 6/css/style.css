@@ -101,23 +101,35 @@ main {
 /* BEFORE */
 .alarm::before {
   background-image: url(../img/ALARM.png);
+  background-repeat: no-repeat;
 }
 .slice::before {
   background-image: url(../img/LINE_GRAPH.png);
+  background-repeat: no-repeat;
 }
 .computer::before {
   background-image: url(../img/OK.png);
+  background-repeat: no-repeat;
 }
 .book::before {
   background-image: url(../img/BOOK_2.png);
+  background-repeat: no-repeat;
 }
 .home::before {
   background-image: url(../img/HOME.png);
+  background-repeat: no-repeat;
 }
 .digital::before {
   background-image: url(../img/digital.png);
+  background-repeat: no-repeat;
 }
-*::before {
+
+.alarm::before,
+.slice::before,
+.computer::before,
+.book::before,
+.home::before,
+.digital::before {
   top: 0;
   left: 0;
   position: absolute;
@@ -125,11 +137,13 @@ main {
   content: "";
   width: 32px;
   height: 32px;
+  width: 100%;
 }
 
 /*BEFORE end*/
 
 .name-services {
+  line-height: 1;
   padding-bottom: 18px;
   color: #333333;
   font-family: "Montserrat";
@@ -153,7 +167,6 @@ main {
   font-weight: 400;
   text-align: center;
 }
-
 
 /* STYLE H2 */
 .content-header-name {
@@ -194,6 +207,7 @@ main {
 
 .our-team-cards {
   display: flex;
+  position: relative;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 82px;
@@ -242,20 +256,41 @@ main {
   position: relative;
 }
 
-.socials {
-  display: flex;
+.overlay {
   cursor: pointer;
-  justify-content: center;
-  align-items: center;
   position: absolute;
   box-sizing: border-box;
-  text-align: center;
   top: 0;
   left: 0;
   opacity: 0;
-  background: linear-gradient(#ed8889, #eed787);
+  background: linear-gradient(
+    rgba(237, 136, 137, 0.9),
+    rgba(238, 215, 135, 0.9)
+  );
   width: 380px;
   height: 470px;
+  transition-property: top, left, opacity;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+}
+.cart-team:hover .overlay {
+  top: -10px;
+  left: -10px;
+  opacity: 0.9;
+}
+
+.socials {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 380px;
+  height: 470px;
+  cursor: pointer;
+  display: flex;
+  opacity: 0;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   transition-property: top, left, opacity;
   transition-duration: 0.2s;
   transition-timing-function: linear;
@@ -263,8 +298,9 @@ main {
 .cart-team:hover .socials {
   top: -10px;
   left: -10px;
-  opacity: 0.9;
+  opacity: 1;
 }
+
 
 .socials-link {
   width: 56px;
@@ -274,7 +310,7 @@ main {
   justify-content: center;
   align-items: center;
   margin-right: 1px;
-  transition-property: background-color;
+  transition-property: background-color, opacity;
   transition-timing-function: linear;
   transition-duration: 0.2s;
 }
