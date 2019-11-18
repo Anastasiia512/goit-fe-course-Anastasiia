@@ -222,7 +222,6 @@ form input {
   width: 455px;
   height: 50px;
   margin-bottom: 30px;
-  outline: none;
   padding-left: 20px;
 }
 textarea {
@@ -246,30 +245,30 @@ input::placeholder {
   text-transform: uppercase;
 }
 .user-info input[type="name"]:valid {
-  border-color: green;
+ outline-color: green;
 }
 .user-info input[type="name"]:invalid {
-  border-color: red;
+  outline-color: red;
 }
 .user-info input[type="name"]:invalid::placeholder {
   color: lightcoral;
 }
 
 .user-info input[type="email"]:valid {
-  border-color: green;
+  outline-color: green;
 }
 .user-info input[type="email"]:invalid {
-  border-color: red;
+  outline-color: red;
 }
 .user-info input[type="email"]:invalid::placeholder {
   color: lightcoral;
 }
 
 form textarea:valid {
-  border-color: green;
+  outline-color: green;
 }
 form textarea:invalid {
-  border-color: red;
+  outline-color: red;
 }
 form textarea:invalid::placeholder {
   color: lightcoral;
