@@ -36,29 +36,38 @@ a {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
-  src: local("Montserrat"),
-    url("img/Font-family/montserrat-v14-latin-regular.woff");
+  src: local("Montserrat Regular"), local("Montserrat-Regular"),
+    url("../Font-family/montserrat-v14-latin-regular.woff2") format("woff2"),
+    url("../Font-family/montserrat-v14-latin-regular.woff") format("woff");
 }
 @font-face {
   font-family: "Montserrat";
   font-style: bold;
   font-weight: 700;
-  src: local("Montserrat"), url("img/Font-family/montserrat-v14-latin-700.woff");
+  src: local("Montserrat Bold"), local("Montserrat-Bold"),
+       url("../Font-family/montserrat-v14-latin-700.woff2") format("woff2"),
+       url("../Font-family/montserrat-v14-latin-700.woff") format("woff");
 }
 @font-face {
-  font-family: "Alegreya";
+
+  font-family: 'Alegreya';
   font-style: italic;
   font-weight: 400;
-  src: local("Alegreya italic"),
-    url("img/Font-family/alegreya-v13-latin-italic.woff");
+  src: local('Alegreya Italic'), local('Alegreya-Italic'),
+       url('../Font-family/alegreya-v13-latin-italic.woff2') format('woff2'),
+       url('../Font-family/alegreya-v13-latin-italic.woff') format('woff'); 
 }
+
 @font-face {
   font-family: "Roboto Slab";
   font-style: normal;
   font-weight: 400;
-  src: local("Roboto Slab")
-    url("/img/Font-family/roboto-slab-v10-latin-regular.woff");
+  src: local("Roboto Slab"), local("Roboto-Slab"),
+    url("../Font-family/roboto-slab-v10-latin-regular.woff2") format("woff2"),
+    url("../Font-family/roboto-slab-v10-latin-regular.woff") format("woff");
 }
+
+
 
 /* navigation */
 .site-navigation {
@@ -208,15 +217,12 @@ form {
   min-height: 306px;
   text-align: center;
 }
-.text-area {
+.contact-text-area {
   position: absolute;
   top: 76px;
   right: 0;
 }
-.user-info {
-  width: 455px;
-  min-height: 210px;
-}
+
 
 form input {
   width: 455px;
@@ -224,17 +230,17 @@ form input {
   margin-bottom: 30px;
   padding-left: 20px;
 }
-textarea {
-  width: 455px;
-  height: 210px;
-}
+
 textarea::placeholder {
   color: #bbbbbb;
   font-family: "Montserrat";
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
+}
+textarea {
   padding: 20px;
+  min-height: 210px;
 }
 
 input::placeholder {
@@ -244,34 +250,29 @@ input::placeholder {
   font-weight: 700;
   text-transform: uppercase;
 }
-.user-info input[type="name"]:valid {
- outline-color: green;
-}
-.user-info input[type="name"]:invalid {
-  outline-color: red;
-}
-.user-info input[type="name"]:invalid::placeholder {
-  color: lightcoral;
+
+input[type="email"]:focus:invalid,
+textarea[name="body"]:focus:invalid,
+input[name="user-name"]:focus:invalid {
+outline-color: red;
+transition: outline-color .5s;
 }
 
-.user-info input[type="email"]:valid {
-  outline-color: green;
-}
-.user-info input[type="email"]:invalid {
-  outline-color: red;
-}
-.user-info input[type="email"]:invalid::placeholder {
-  color: lightcoral;
+input[type="email"]:focus:valid,
+textarea[name="body"]:focus:valid,
+input[name="user-name"]:focus:valid {
+outline-color: green;
+transition: outline-color .4s;
 }
 
-form textarea:valid {
-  outline-color: green;
-}
-form textarea:invalid {
-  outline-color: red;
-}
-form textarea:invalid::placeholder {
-  color: lightcoral;
+.user-info input,
+.contact-text-area textarea {
+box-sizing: border-box;
+width: 455px;
+display: block;
+outline: 4px solid transparent;
+outline-offset: -2px;
+transition: outline-color 0.1s;
 }
 
 .form-button {
@@ -281,11 +282,11 @@ form textarea:invalid::placeholder {
 }
 button {
   color: #ffffff;
-  font-family: Montserrat;
+  font-family: "Montserrat";
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
-  padding: 26px 47px;
+  padding: 26px 44px;
   border-radius: 5px;
   background-color: #fed136;
   outline: none;

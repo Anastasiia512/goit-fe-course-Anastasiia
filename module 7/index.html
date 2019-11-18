@@ -52,10 +52,10 @@
         <div class="backgr-map"></div>
         <h2 class="form-title">Contact us</h2>
         <p class="form-text">Proin iaculis purus consequat sem cure.</p>
-        <form action="#">
+        <form class="contact" action="#" method="POST">
           <div class="user-info">
             <input
-              type="name"
+              type="text"
               placeholder="YOUR NAME*"
               autofocus
               name="user-name"
@@ -69,18 +69,16 @@
             />
             <input type="text" placeholder="SUBJECT" name="subject" />
           </div>
-          <div class="text-area">
+          <div class="contact-text-area">
             <textarea
               type="text"
-              name="text"
-              rows="15"
-              cols="40"
+              name="body"
               placeholder="YOUR MESSAGE*"
               required
             ></textarea>
           </div>
           <div class="form-button">
-            <button>Send Message</button>
+            <button type="submit">Send Message</button>
           </div>
         </form>
       </div>
