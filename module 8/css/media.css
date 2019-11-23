@@ -1,0 +1,61 @@
+
+@media (min-width: 748px) {
+    header {
+    width: 100%;
+
+    }
+    main {
+min-width: 492px;
+    }
+    h1 { 
+font-size: 52px;
+    }
+    
+    .header-content {
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    .box-card-team {
+        display: flex;
+        min-width: 470px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 0 150px;
+
+    }
+    .img-first::after {
+    bottom: 120px;
+}
+    .img-fourth::after {
+        bottom: 120px;
+    }
+    
+    .card-team:nth-child(2) {
+        order: 20;
+    }
+    .card-team:nth-child(3) {
+        order: 10;
+    }
+    .card-team:nth-child(4) {
+        order: 30;
+    }
+    .site-navigation {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+@media (min-width: 940px) {
+    .wrapper {
+        width: 940px;
+    }
+    .header-content {
+        width: 60%;
+    }
+    .img-third::after {
+        bottom: 120px;
+    }
+}

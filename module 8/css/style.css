@@ -1,0 +1,269 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0 auto;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+li {
+  list-style: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+
+/* montserrat-regular - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Montserrat Regular"), local("Montserrat-Regular"),
+    url("../fonts/montserrat-v14-latin-regular.woff2") format("woff2"),
+    url("../fonts/montserrat-v14-latin-regular.woff") format("woff");
+}
+/* montserrat-700 - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Montserrat Bold"), local("Montserrat-Bold"),
+    url("../fonts/montserrat-v14-latin-700.woff2") format("woff2"),
+    url("../fonts/montserrat-v14-latin-700.woff") format("woff");
+}
+
+/* roboto-300 - latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Roboto Light"), local("Roboto-Light"),
+    url("../fonts/roboto-v20-latin-300.woff2") format("woff2"),
+    url("../fonts/roboto-v20-latin-300.woff") format("woff");
+}
+/* roboto-regular - latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"), local("Roboto-Regular"),
+    url("../fonts/roboto-v20-latin-regular.woff2") format("woff2"),
+    url("../fonts/roboto-v20-latin-regular.woff") format("woff");
+}
+
+header {
+  width: 100%;
+  padding-bottom: 114px;
+  margin: 0 auto;
+  text-align: center;
+  background-image: url(../img/head_pic.png), linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8));
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.wrapper {
+  min-width: 320px;
+  margin: 0 auto;
+  height: auto;
+  
+}
+
+
+.site-navigation {
+  padding-top: 20px;
+}
+
+.nav {
+  min-width: 152px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 114px;
+}
+.logo {
+  margin: 0 auto;
+}
+
+.nav li a {
+  font-family: "Montserrat";
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 25px;
+  padding: 10px 18px;
+  border: 2px solid transparent;
+  border-radius: 25px;
+  transition-property: border;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+}
+
+.nav li a:hover {
+  border: 2px solid #ffffff;
+}
+
+.header-content {
+  padding-top: 38px;
+  text-align: center;
+}
+
+h1 {
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.header-text {
+  color: #ffffff;
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 300;
+  padding: 20px;
+  margin: 0 auto;
+}
+.header-btn {
+  margin: 0 auto;
+}
+.header-btn button {
+  cursor: pointer;
+  background-color: #ff4e50;
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 700;
+  outline: none;
+  border: 2px solid transparent;
+  padding: 12px 48px;
+  border-radius: 25px;
+  transition-property: background-color, border, color;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+}
+
+.header-btn button:hover {
+  background-color: #ffffff;
+  color: #ff4e50;
+  border: 2px solid #ff4e50;
+}
+
+main {
+  min-width: 320px;
+  margin: 0 auto;
+  padding-top: 68px;
+  text-align: center;
+}
+h2 {
+  color: #333333;
+  font-family: "Montserrat";
+  font-size: 22px;
+  font-weight: 700;
+  padding-bottom: 14px;
+}
+
+.card-team {
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 30px;
+  width: 194px;
+  position: relative;
+}
+
+.card-team img {
+  margin: 0 auto;
+  transition: transform 0.2s linear;
+}
+.card-team img:hover {
+  transform: scale(1.1);
+}
+
+.img-first::after {
+  background-image: url(../img/icon1.png);
+  right: 34px;
+  bottom: 86px;
+}
+.img-second::after {
+  background-image: url(../img/icon3.png);
+  right: 34px;
+  bottom: 118px;
+}
+.img-third::after {
+  background-image: url(../img/icon2.png);
+  right: 32px;
+  bottom: 102px;
+}
+.img-fourth::after {
+  background-image: url(../img/icon4.png);
+  right: 32px;
+  bottom: 88px;
+}
+.img-first::after,
+.img-second::after,
+.img-third::after,
+.img-fourth::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+.name-team {
+  color: #333333;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 700;
+  padding: 20px;
+}
+
+.card-team-text {
+  color: #666666;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.footer-btn {
+  padding-bottom: 58px;
+}
+.footer-btn button {
+  color: #ff4e50;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 700;
+  padding: 14px 74px;
+  outline: none;
+  border: 2px solid #ff4e50;
+  background-color: #ffffff;
+  border-radius: 25px;
+  transition-property: background-color, color;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+}
+
+.footer-btn button:hover {
+  background-color: #ff4e50;
+  color: #ffffff;
+}
