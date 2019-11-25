@@ -76,18 +76,17 @@ header {
   padding-bottom: 114px;
   margin: 0 auto;
   text-align: center;
-  background-image: url(../img/head_pic.png), linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8));
+  background-image: url(../img/head_pic.png),
+    linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .wrapper {
-  min-width: 320px;
+  max-width: 320px;
   margin: 0 auto;
   height: auto;
-  
 }
-
 
 .site-navigation {
   padding-top: 20px;
@@ -179,12 +178,15 @@ h2 {
   font-weight: 700;
   padding-bottom: 14px;
 }
-
+.box-card-team {
+max-width: 320px;
+margin: auto;
+}
 .card-team {
   margin: 0 auto;
   text-align: center;
   margin-bottom: 30px;
-  width: 194px;
+  max-width: 216px;
   position: relative;
 }
 
@@ -229,7 +231,6 @@ h2 {
   background-position: center;
 }
 
-
 .name-team {
   color: #333333;
   font-family: "Montserrat";
@@ -250,6 +251,7 @@ h2 {
 }
 .footer-btn button {
   color: #ff4e50;
+  cursor: pointer;
   font-family: "Montserrat";
   font-size: 14px;
   font-weight: 700;
