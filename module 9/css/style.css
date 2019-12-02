@@ -17,29 +17,28 @@ header {
 .btn-wrapper {
   padding-bottom: 104px;
 }
+
 .btn-links {
   font-family: "Montserrat";
   color: #ffffff;
   background-color: transparent;
   font-size: 14px;
   font-weight: 700;
-  border-radius: 25px;
+  outline: none;
   padding: 10px 18px;
+  
   border: 2px solid transparent;
-  border-radius: 25px;
-  transition-property: border;
-  transition-duration: 0.2s;
-  transition-timing-function: linear;
+  
 }
 
 .btn-links:hover {
   border: 2px solid #ffffff;
-  color: #ffffff;
+  border-radius: 25px;
 }
 
 .header-content {
-  max-width: 276px;
-  margin: 0 auto;
+  max-width: 320px;
+  /* margin: 0 auto; */
 }
 h1 {
   color: #ffffff;
@@ -195,11 +194,15 @@ h2 {
     font-size: 52px;
   }
   .header-content {
-    max-width: 508px;
+    max-width: 522px;
+    margin: 0 auto;
   }
 }
 @media (min-width: 992px) {
   .card-team {
     padding: 0 25px;
   }
+.wrapper {
+  max-width: 960px;
+}
 }
