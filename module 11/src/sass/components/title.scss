@@ -1,0 +1,17 @@
+.title {
+  @extend %center;
+  color: $text-grey-color;
+  font-family: $main-font-montserrat;
+  @include font-settings(30px, 700, "");
+  text-transform: uppercase;
+    
+  &::after {
+    display: block;
+    content: "";
+    width: 60px;
+    height: 3px;
+    background-color: $background-pink-color;
+    margin: 42px auto;
+  }
+}
+  

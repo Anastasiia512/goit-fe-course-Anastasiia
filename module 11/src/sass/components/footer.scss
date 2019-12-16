@@ -1,0 +1,42 @@
+.footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  @include flex-settings(flex, space-between, center);
+  width: 1200px;
+  min-height: 50px;
+  border-top: 1px solid #e5e5e5;
+  margin: 0 auto;
+}
+  
+.footer__name {
+  color: $text-grey-color;
+  font-family: $main-font-montserrat;
+}
+  
+.footer__name--item {
+  color: $background-pink-color;
+}
+  
+.footer__form-mail {
+  display: flex;
+}
+  
+.footer__button {
+  width: 150px;
+  background-color: $bg-light-blue-color;
+  border: none;
+}
+  
+input[type="email"] {
+  width: 230px;
+  height: 40px;
+  border: 1px solid $dirty-white-color;
+    
+  &::placeholder {
+    color: $text-placeholder-color;
+    font-family: $text-font-roboto;
+    font-style: italic;
+    font-weight: lighter;
+    padding-left: 12px;
+  }
+}

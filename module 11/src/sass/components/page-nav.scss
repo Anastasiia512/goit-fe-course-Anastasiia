@@ -1,0 +1,8 @@
+.page-nav {
+  margin: 0 auto;
+  padding-top: 28px;
+  @include flex-settings(flex, space-between, center);
+  flex-wrap: wrap;
+  width: 1200px;
+  padding-bottom: 128px;
+}

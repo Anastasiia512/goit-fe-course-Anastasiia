@@ -1,0 +1,26 @@
+.header-content {
+  @extend %center;
+  max-width: 802px;
+  padding-bottom: 230px;
+}
+
+.header-content__item {
+  color: $primary-white-color;
+  font-family: $secondary-font-caushan-script;
+  @include font-settings(72px, 400, "")
+}
+
+.header-content__title {
+  color: $primary-white-color;
+  font-family: $main-font-montserrat;
+  @include font-settings(150px, 700, 140px);
+  text-transform: uppercase;
+  padding-bottom: 124px;
+  margin: 0;
+}
+
+.header-content__button {
+  width: 160px;
+  border: 3px solid $primary-white-color;
+  background-color: transparent;
+}

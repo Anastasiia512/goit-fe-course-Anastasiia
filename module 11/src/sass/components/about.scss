@@ -1,0 +1,6 @@
+.about {
+  color: $text-grey-color;
+  font-family: $secondary-font-caushan-script;
+  @include font-settings(24px, 400, "");
+  text-align: center;
+}

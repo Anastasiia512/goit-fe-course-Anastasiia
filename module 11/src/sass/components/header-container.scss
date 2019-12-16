@@ -1,0 +1,10 @@
+
+.header-container {
+  width: 100%;
+  background-image: $main-linear-gradient, url(../images/bird-min.png);
+  @include background-settings (cover, center, no-repeat)
+  
+  @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/bird@2x-min.png);
+  }
+}

@@ -1,0 +1,31 @@
+.site-navigation {
+  align-content: center;
+  width: 490px;
+}
+
+.site-navigation__icon {
+  fill: $primary-white-color;
+  display: block;
+  
+  &:hover {
+    fill: $bg-orange-color;
+  }
+}
+  
+.site-navigation__link {
+  color: $primary-white-color;
+  font-family: $main-font-montserrat;
+  font-size: $main-text-size;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-bottom: 0;
+  border-bottom: 0 solid $background-pink-color;
+  @include functions(color border padding, 200ms, linear);
+  
+  &:hover,
+  &:focus {
+    color: $bg-orange-color;
+    border-bottom: 3px solid $bg-orange-color;
+    padding-bottom: 12px;
+  }
+}

@@ -1,0 +1,22 @@
+@mixin flex-settings($flex, $space, $position) {
+  display: $flex;
+  justify-content: $space;
+  align-items: $position;
+}
+
+@mixin background-settings($bg-size, $bg-pos, $bg-rep) {
+  background-size: $bg-size;
+  background-position: $bg-pos;
+  background-repeat: $bg-rep;
+}
+
+@mixin functions ($dur, $timing) {
+  transition-duration: $dur;
+  transition-timing-function: $timing; 
+}
+
+@mixin font-settings($size, $weight, $height) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $height;
+}

@@ -1,0 +1,77 @@
+.work-list__item {
+  text-align: left;
+  position: relative;
+  width: 325px;
+  margin-bottom: 100px;
+  padding-left: 60px;
+  
+  &--icon::before {
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: block;
+    content: "";
+    width: 32px;
+    height: 32px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  &-alarm::before {
+    background-image: url(../icon-clock.png);
+
+    @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/icon-clock@2x.png);
+    }
+  }
+  
+    
+  &-slice::before {
+    background-image: url(../images/icon-GRAPH.png);
+  
+    @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/icon-GRAPH@2x.png);
+    }
+  }
+    
+  &-computer::before {
+    background-image: url(../images/icon-comp.png);
+  
+    @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/icon-comp@2x.png);
+    }
+  }
+    
+  &-book::before {
+    background-image: url(../images/icon-book.png);
+  
+    @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/icon-book@2x.png);
+    }
+  }
+    
+  &-home::before {
+    background-image: url(../images/icon-home.png);
+  
+    @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/icon-home@2x.png);
+    }
+  }
+    
+  &-digital::before {
+    background-image: url(../images/icon-scrin.png);
+  
+    @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/icon-scrin@2x.png);
+    }
+  }  
+}
+   
+.work-list__title {
+  padding-bottom: 18px;
+  color: $text-grey-color;
+  font-family: $main-font-montserrat;
+  @include font-settings($main-text-size, 400, 1);
+  text-transform: uppercase;
+  margin: 0;
+}

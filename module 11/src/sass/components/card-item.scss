@@ -1,0 +1,107 @@
+.card-item {
+  position: relative;
+  margin-bottom: 82px;
+  
+  &:focus,
+  &:hover .card-item__img {
+    right: 10px;
+    bottom: 10px;
+  }
+  
+  &:focus,
+  &:hover .card-item__overlay {
+    top: -10px;
+    left: -10px;
+    opacity: 0.9;
+  }
+  
+  &:hover .card-item__socials {
+    top: -10px;
+    left: -10px;
+    opacity: 1;
+  }
+}
+  
+.card-item__img-wrapper {
+  width: 380px;
+  height: 470px;
+  background-color: $bg-light-blue-color;
+}
+  
+.card-item__img {
+  position: relative;
+  right: 0;
+  bottom: 0;
+  transition-property: bottom, right;
+  @include functions(0.2s, linear);
+}
+  
+  
+.card-item__overlay {
+  cursor: pointer;
+  position: absolute;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  background: $main-linear-gradient;
+  width: 380px;
+  height: 470px;
+  transition-property: top, left, opacity;
+  @include functions(0.2s, linear);
+}
+  
+  
+.card-item__socials {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 380px;
+  height: 470px;
+  cursor: pointer;
+  display: flex;
+  opacity: 0;
+  align-items: center;
+  transition-property: top, left, opacity;
+  @include functions(0.2s, linear);
+}
+  
+.card-item__socials-link {
+  width: 56px;
+  height: 56px;
+  background-color: $bg-orange-color;
+  @include flex-settings(flex, space-between, center);
+  margin-right: 1px;
+  transition-property: background-color;
+  @include functions(0.2s, linear);
+    
+  &:focus,
+  &:hover {
+    background-color: $background-pink-color;
+  }
+    
+  &:focus,
+  &:hover .card-item__icon {
+    fill: $primary-white-color;
+  }
+}
+  
+.card-item__icon {
+  fill: $background-pink-color;
+}
+  
+.card-item__team-name {
+  color: $text-grey-color;
+  font-family: $main-font-montserrat;
+  text-transform: uppercase;
+  padding-top: 30px;
+}
+  
+.card-item__profession {
+  color: $text-light-grey-color;
+  font-family: $text-font-roboto;
+  @include font-settings(15px, lighter, 24px);
+  font-style: italic;
+  text-align: center;
+}
+  

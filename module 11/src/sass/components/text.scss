@@ -1,0 +1,11 @@
+.text{
+  color: $text-light-grey-color;
+  font-family: $text-font-roboto;
+  @include font-settings(15px, "", 24px);
+  margin: 0;
+ 
+}
+
+.our-team__text {
+  padding: 0 123px 92px;
+}

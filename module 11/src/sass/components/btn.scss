@@ -1,0 +1,8 @@
+.btn {
+  font-family: $main-font-montserrat;
+  @include font-settings($main-text-size, 700, "");
+  text-transform: uppercase;
+  @extend %btn-settings;
+  height: 40px;
+  color: $primary-white-color;
+}

@@ -2,10 +2,25 @@
  * Все паршалы импортировать в этот файл
  */
 @import "helpers/variables.scss";
+@import "helpers/mixin.scss";
+@import "helpers/placeholders.scss";
 @import 'normalize.scss';
 @import 'base.scss';
-@import "mixin.scss";
-@import "placeholders.scss";
 
 // components
 @import "components/list.scss";
+@import "components/header-container.scss";
+@import "components/page-nav.scss";
+@import "components/text.scss";
+@import "components/section.scss";
+@import "components/section-list.scss";
+@import "components/site-navigation.scss";
+@import "components/header-content.scss";
+@import "components/btn.scss";
+@import "components/about.scss";
+@import "components/our-work.scss";
+
+@import "components/title.scss";
+@import "components/work-list.scss";
+@import "components/card-item.scss";
+@import "components/footer.scss";
