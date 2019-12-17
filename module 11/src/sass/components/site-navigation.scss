@@ -20,7 +20,8 @@
   text-transform: uppercase;
   padding-bottom: 0;
   border-bottom: 0 solid $background-pink-color;
-  @include functions(color border padding, 200ms, linear);
+  @include functions(
+    200ms, linear);
   
   &:hover,
   &:focus {

@@ -59,9 +59,8 @@
   width: 380px;
   height: 470px;
   cursor: pointer;
-  display: flex;
+  @include flex-settings(flex, center, center);
   opacity: 0;
-  align-items: center;
   transition-property: top, left, opacity;
   @include functions(0.2s, linear);
 }
@@ -70,7 +69,7 @@
   width: 56px;
   height: 56px;
   background-color: $bg-orange-color;
-  @include flex-settings(flex, space-between, center);
+  @include flex-settings(flex, center, center);
   margin-right: 1px;
   transition-property: background-color;
   @include functions(0.2s, linear);
