@@ -19,51 +19,51 @@
   
   
   &--icon-alarm::before {
-    background-image: url(../../images/icon-clock.png);
+    background-image: url(./../images/icon-clock.png);
 
     @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(../../images/icon-clock@2x.png);
+      background-image: url(./../images/icon-clock@2x.png);
     }
   }
   
     
   &--icon-slice::before {
-    background-image: url(../../images/icon-GRAPH.png);
+    background-image: url(./../images/icon-GRAPH.png);
   
     @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(../../images/icon-GRAPH@2x.png);
+      background-image: url(./../images/icon-GRAPH@2x.png);
     }
   }
     
   &--icon-computer::before {
-    background-image: url(../../images/icon-comp.png);
+    background-image: url(./../images/icon-comp.png);
   
     @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(../../images/icon-comp@2x.png);
+      background-image: url(./../images/icon-comp@2x.png);
     }
   }
     
   &--icon-book::before {
-    background-image: url(../../images/icon-book.png);
+    background-image: url(./../images/icon-book.png);
   
     @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(../../images/icon-book@2x.png);
+      background-image: url(./../images/icon-book@2x.png);
     }
   }
     
   &--icon-home::before {
-    background-image: url(../../images/icon-home.png);
+    background-image: url(./../images/icon-home.png);
   
     @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(../../images/icon-home@2x.png);
+      background-image: url(./../images/icon-home@2x.png);
     }
   }
     
   &--icon-digital::before {
-    background-image: url(../../images/icon-scrin.png);
+    background-image: url(./../images/icon-scrin.png);
   
     @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(../../images/icon-scrin@2x.png);
+      background-image: url(./../images/icon-scrin@2x.png);
     }
   }  
 }
