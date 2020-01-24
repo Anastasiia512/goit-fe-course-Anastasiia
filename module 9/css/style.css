@@ -26,9 +26,7 @@ header {
   font-weight: 700;
   outline: none;
   padding: 10px 18px;
-  
   border: 2px solid transparent;
-  
 }
 
 .btn-links:hover {
@@ -38,7 +36,6 @@ header {
 
 .header-content {
   max-width: 320px;
-  /* margin: 0 auto; */
 }
 h1 {
   color: #ffffff;
@@ -180,6 +177,7 @@ h2 {
   color: #ffffff;
 }
 /* MEDIA */
+
 @media (min-width: 768px) {
   .wrapper {
     max-width: 720px;
@@ -202,7 +200,7 @@ h2 {
   .card-team {
     padding: 0 25px;
   }
-.wrapper {
-  max-width: 960px;
-}
+  .wrapper {
+    max-width: 960px;
+  }
 }
